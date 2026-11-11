@@ -1,0 +1,105 @@
+.nav {
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcfaf8;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    width: 256px;
+    margin: 12px;
+}
+
+.options {
+    display: flex;
+    gap: 5px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.options svg {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options svg:hover {
+    background-color: #f2efed;
+    transition: 0.3s;
+}
+
+.div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 34px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 256px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.div:hover {
+    background-color: #f2efed;
+    transition: 0.3s;
+}
+
+.addTask {
+    color: #a81f00;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.addTask svg {
+    color: #dc4c3e;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+}
+
+.menuComp {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 34px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menuComp p {
+    color: #a81f00;
+}
+
+.menuComp > svg {
+    color: #666 !important;
+}
+
+.menuComp:hover {
+    background-color: #f2efed;
+}
+
+.active {
+    background-color: #ffefe5 !important;
+    color: #a81f00;
+}
+
+.active svg {
+    color: #dc4c3e;
+}
+
+svg {
+    color: #666666;
+}

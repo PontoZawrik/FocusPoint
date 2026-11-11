@@ -1,0 +1,99 @@
+.user {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 120px;
+}
+
+.user svg {
+    margin-left: auto;
+}
+
+.user:hover {
+    background-color: #f2efed;
+    transition: 0.3s;
+}
+
+.active {
+    background-color: #f2efed;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+}
+
+.username p {
+    display: flex;
+    align-items: center;
+}
+
+
+.profile {
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .12);
+    background-color: #fff;
+    width: 280px;
+    padding: 6px 5px;
+    z-index: 100;
+}
+
+.options hr {
+    margin: 6px 0;
+    height: 1px;
+    background-color: #eee;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 6px;
+    height: 32px;
+}
+
+.option:hover {
+    background-color: #f2efed;
+}
+
+.version {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.version p {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 6px;
+    height: 32px;
+}
+
+.version p:hover {
+    background-color: #f2efed;
+}

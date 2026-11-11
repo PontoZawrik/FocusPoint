@@ -1,0 +1,46 @@
+<div class="content">
+    <div class="logo"><img src="./logo.png" alt=""> <p>FocusPoint</p></div>
+
+    <div class="wrapper">
+        <div class="login">
+            <h3>Войти</h3>
+
+            <div 
+            class="input" 
+            [ngClass]="{'active': username.isActive}"
+            >
+                <p>Логин</p>
+
+                <input 
+                type="text" 
+                placeholder="Введите логин..."
+                (focus)="focus(username)"
+                (blur)="blur(username)"
+                [(ngModel)]="username.value"
+                >
+            </div>
+
+            <div 
+            class="input" 
+            [ngClass]="{'active': password.isActive}"
+            >
+                <p>Пароль</p>
+
+                <input 
+                type="password" 
+                placeholder="Введите пароль..."
+                (focus)="focus(password)"
+                (blur)="blur(password)"
+                [(ngModel)]="password.value"
+                >
+            </div>
+
+            <button class="button" (click)="login()">Войти</button>
+
+            <hr>
+            <p class="reg">Еще нет аккаунта? <a routerLink="/registration">Зарегистроваться</a></p>
+        </div>
+
+        <div class="img"><img src="./loginImg.png" alt=""></div>
+    </div>
+</div>

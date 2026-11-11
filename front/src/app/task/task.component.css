@@ -1,0 +1,110 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 800px;
+}
+
+.complite {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+.circle svg {
+    opacity: 0;
+    color: #999;
+    transition: 150ms cubic-bezier(0.4,0,1,1)
+}
+
+.complite:hover .circle svg {
+    opacity: 1;
+    transition: 150ms ease-in;
+}
+
+.name {
+    margin-bottom: 1px;
+}
+
+.info {
+    font-size: 12px;
+    color: #808080;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Приоритеты */
+
+/* 1 Приоритет */
+.p1 .circle {
+    border: 2px solid #d1453b;
+    background-color: rgb(209, 68, 61, .1);
+}
+
+.p1 .complite:hover .circle {
+    background-color: rgb(209, 68, 61, .2);
+}
+
+.p1 .circle svg {
+    color: #d1453b;
+}
+
+
+/* 2 Приоритет */
+.p2 .circle {
+    border: 2px solid #eb8909;
+    background-color: rgb(235, 137, 9, .1);
+}
+
+.p2 .complite:hover .circle {
+    background-color: rgb(235, 137, 9, .2);
+}
+
+.p2 .circle svg {
+    color: #eb8909;
+}
+
+
+/* 3 Приоритет */
+.p3 .circle {
+    border: 2px solid #246fe0;
+    background-color: rgb(36, 111, 224, .1);
+}
+
+.p3 .complite:hover .circle {
+    background-color: rgb(36, 111, 224, .2);
+}
+
+.p3 .circle svg {
+    color: #246fe0;
+}

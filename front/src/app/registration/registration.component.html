@@ -1,0 +1,31 @@
+<div class="content">
+    <div class="logo"><img src="" alt=""> <p>FocusPoint</p></div>
+
+    <div class="wrapper">
+        <div class="registration">
+            <h3>Регистрация</h3>
+
+            <div 
+            class="input" 
+            *ngFor="let el of inputs; let i=index"
+            [ngClass]="{'active': el.isActive}"
+            >
+                <p>{{el.name}}</p>
+
+                <input 
+                type="{{el.type}}" 
+                placeholder="{{el.placeholder}}"
+                (focus)="focus(i)"
+                (blur)="blur(i)"
+                >
+            </div>
+
+            <button class="button">Зарегистрироваться</button>
+
+            <hr>
+            <p class="reg">Уже есть аккаунт? Тогда <a routerLink="/login">войдите</a></p>
+        </div>
+
+        <div class="img">asda</div>
+    </div>
+</div>

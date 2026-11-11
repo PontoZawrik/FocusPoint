@@ -1,0 +1,16 @@
+<div class="incoming">
+    <p class="name">Входящие</p>
+
+    <ul>
+        <li *ngFor="let task of data">
+            <app-task (deleteEvent)="deleteTask($event)" [task]="task"></app-task>
+        </li>
+        <app-add-task (addEvent)="addTask($event)"></app-add-task>
+    </ul>
+
+    <div class="empty" *ngIf="data.length == 0">
+        <img src="./empty.png" alt="">
+        <p class="bold">Ваше спокойствие бесценно</p>
+        <p>Отличная работа! Все ваши задачи <br>организованы как надо.</p>
+    </div>
+</div>

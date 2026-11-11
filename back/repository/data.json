@@ -1,0 +1,39 @@
+[
+  {
+    "username": "PontoZawrik",
+    "passwordHash": "$2b$10$7ueNG2evZKr5CKeYpY2ck.5eEaG80kK8Gocg7JaSxWhs4e4cMoQWG",
+    "tasks": [
+      {
+        "id": 3,
+        "name": "ОЧЕНЬ важная задача",
+        "description": "Задача ОООООЧЕНЬ важная",
+        "priority": 1,
+        "tags": [
+          "Важно"
+        ]
+      }
+    ]
+  },
+  {
+    "username": "c",
+    "passwordHash": "$2b$10$wFZ/npjAMyhfVMhKccBm.ePdRRvCs9aiZpPdi13JPE1xrFfmt.bpS",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "вапролд",
+        "description": "вапролд",
+        "priority": 1,
+        "tags": []
+      },
+      {
+        "id": 2,
+        "name": "апрол",
+        "description": "пролд",
+        "priority": 3,
+        "tags": [
+          "прол"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+<div class="task p{{task?.priority}}">
+    <div class="wrapper">
+        <button class="complite" (click)="deleteTask()">
+            <div class="circle">
+                <svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-5,-5.5)"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5056 9.00958C16.2128 8.71668 15.7379 8.71668 15.445 9.00958L10.6715 13.7831L8.72649 11.8381C8.43359 11.5452 7.95872 11.5452 7.66583 11.8381C7.37294 12.1309 7.37293 12.6058 7.66583 12.8987L10.1407 15.3736C10.297 15.5299 10.5051 15.6028 10.7097 15.5923C10.8889 15.5833 11.0655 15.5104 11.2023 15.3735L16.5056 10.0702C16.7985 9.77735 16.7985 9.30247 16.5056 9.00958Z" fill="currentColor"></path></g></svg>
+            </div>
+        </button>
+        <p class="name">{{task?.name}}</p>
+    </div>
+    <div class="info">
+        <p>{{task?.description}}</p>
+        <div class="tags">
+            <div class="tag" *ngFor="let item of task?.tags">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12"><path fill="currentColor" fill-rule="evenodd" d="M5.93 1h3.427C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 0 1-2.323 0L1.48 7.09a1.643 1.643 0 0 1 0-2.323L4.768 1.48A1.643 1.643 0 0 1 5.93 1Zm.001.91a.804.804 0 0 0-.569.235L2.145 5.362a.804.804 0 0 0 0 1.138L5.5 9.855a.804.804 0 0 0 1.138 0l3.217-3.217a.804.804 0 0 0 .236-.569V2.713a.804.804 0 0 0-.804-.804H5.93Zm1.433 3.635a.91.91 0 1 0 0-1.818.91.91 0 0 0 0 1.818Z" clip-rule="evenodd"></path></svg>
+                <p>{{item}}</p>
+            </div>
+        </div>
+    </div>
+</div>
