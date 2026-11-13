@@ -9,24 +9,24 @@ import { Task } from "../services/application.service"
 })
 export class IncomingComponent {
   constructor(private applicationService: ApplicationService) {}
-  data: Task[] = []
+  data: Task[] = [];
 
   async ngOnInit(): Promise<void> {
-    await this.loadData()
+    await this.loadData();
   }
 
   async loadData(): Promise<void> {
-    await this.applicationService.getUserData()
-    this.data = this.applicationService.user.tasks
+    await this.applicationService.getUserData();
+    this.data = this.applicationService.user.tasks;
   }
 
   async addTask(taskData: Task): Promise<void>{
-    await this.applicationService.addProduct(taskData)
-    await this.loadData()
+    await this.applicationService.addTask(taskData);
+    await this.loadData();
   }
 
   async deleteTask(id: number): Promise<void> {
-    await this.applicationService.deleteTask(id)
-    await this.loadData()
+    await this.applicationService.deleteTask(id);
+    await this.loadData();
   }
 }

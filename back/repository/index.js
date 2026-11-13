@@ -13,16 +13,16 @@ const findIndexByUsername = async (username) =>
 const writeDataToFile = async (data) => {
   const jsonData = JSON.stringify(data, null, 2);
   await fs.writeFile(dataFilePath, jsonData);
-};
+}
 
 const getUserData = async (username) => {
   const { passwordHash, ...userData } = await findUserByUsername(username);
   return userData;
-};
+}
 
 const getProductById = async (id) => {
   return data.find((product) => +product.id === +id);
-};
+}
 
 const addProduct = async (username, task) => {
   const user = await findIndexByUsername(username);
@@ -34,7 +34,7 @@ const addProduct = async (username, task) => {
   });
 
   await writeDataToFile(data);
-};
+}
 
 const deleteProduct = async (username, id) => {
   console.log(id, data);
@@ -46,7 +46,7 @@ const deleteProduct = async (username, id) => {
   data[user].tasks = data[user].tasks.filter((task) => +task.id !== +id);
   await writeDataToFile(data);
   return { success: true };
-};
+}
 
 
 
