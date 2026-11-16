@@ -4,11 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "dev": "node --env-file=.env --watch app.js",
+    "start": "node --env-file=.env app.js",
+    "db:setup": "node --env-file=.env database/setup.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@inquirer/prompts": "^8.7.5",
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.2",
     "connect-history-api-fallback": "^2.0.0",
@@ -17,6 +20,9 @@
     "express-session": "^1.18.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.9"
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^9.0.0"
   }
 }
