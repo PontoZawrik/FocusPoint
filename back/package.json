@@ -10,7 +10,8 @@
     "db:setup": "node --env-file=.env database/setup.js",
     "db:create-migration": "node-pg-migrate create --migrations-dir database/migrations",
     "db:migrate": "node --env-file=.env database/run_migrations.js up",
-    "db:rollback": "node --env-file=.env database/run_migrations.js down"
+    "db:rollback": "node --env-file=.env database/run_migrations.js down",
+    "db:seed": "node --env-file=.env database/seeds/seed.js"
   },
   "author": "",
   "license": "ISC",

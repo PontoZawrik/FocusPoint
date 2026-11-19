@@ -18,6 +18,7 @@ export interface User {
   providedIn: 'root',
 })
 export class ApplicationService {
+  priva
   user: User = this.createEmptyUser();
   constructor() {}
 

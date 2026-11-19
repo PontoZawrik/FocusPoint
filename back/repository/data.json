@@ -11,12 +11,47 @@
         "tags": [
           "Важно"
         ]
+      },
+      {
+        "id": 4,
+        "name": "Выжить",
+        "description": "",
+        "priority": 1,
+        "tags": [
+          "Желательно"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Что-то простенькое",
+        "description": "Надо выдумать",
+        "priority": 3,
+        "tags": []
+      },
+      {
+        "id": 6,
+        "name": "Придумать идеи для задач",
+        "description": "Вроде уже сделано",
+        "priority": 2,
+        "tags": [
+          "Важно"
+        ]
       }
     ]
   },
   {
     "username": "c",
     "passwordHash": "$2b$10$wFZ/npjAMyhfVMhKccBm.ePdRRvCs9aiZpPdi13JPE1xrFfmt.bpS",
-    "tasks": []
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Сходить в магазин",
+        "description": "Взять хлеб и масло",
+        "priority": 3,
+        "tags": [
+          "Для дома"
+        ]
+      }
+    ]
   }
 ]

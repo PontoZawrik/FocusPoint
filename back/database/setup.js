@@ -1,5 +1,5 @@
-import pg from "pg"
-import { password } from "@inquirer/prompts"
+const pg = require("pg")
+const { password } = require("@inquirer/prompts")
 
 const { Client } = pg;
 
@@ -17,7 +17,7 @@ if (!Number.isInteger(databasePort) || databasePort < 1 || databasePort > 65535)
     throw new Error('DB_PORT должен быть целым числом от 1 до 65535');
 }
 
-const adminPassword = await password({
+const adminPassword = async () => await password({
     message: `Введите пароль роли ${DB_ADMIN_USER}: `,
     mask: '*'
 });
@@ -78,4 +78,4 @@ async function setupDatabase() {
     }
 }
 
-await setupDatabase();
+setupDatabase();

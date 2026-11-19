@@ -1,0 +1,83 @@
+[
+  {
+    "username": "PontoZawrik",
+    "passwordHash": "$2b$10$7ueNG2evZKr5CKeYpY2ck.5eEaG80kK8Gocg7JaSxWhs4e4cMoQWG",
+    "tasks": [
+      {
+        "id": 3,
+        "name": "ОЧЕНЬ важная задача",
+        "description": "Задача ОООООЧЕНЬ важная",
+        "priority": 1,
+        "tags": [
+          "Важно"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Выжить",
+        "description": "",
+        "priority": 1,
+        "tags": [
+          "Желательно"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Что-то простенькое",
+        "description": "Надо выдумать",
+        "priority": 3,
+        "tags": []
+      },
+      {
+        "id": 6,
+        "name": "Придумать идеи для задач",
+        "description": "Вроде уже сделано",
+        "priority": 2,
+        "tags": [
+          "Важно"
+        ]
+      }
+    ]
+  },
+  {
+    "username": "c",
+    "passwordHash": "$2b$10$wFZ/npjAMyhfVMhKccBm.ePdRRvCs9aiZpPdi13JPE1xrFfmt.bpS",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Сходить в магазин",
+        "description": "Взять хлеб и масло",
+        "priority": 3,
+        "tags": [
+          "Для дома"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Написать курсовую",
+        "description": "Тема: Web-приложение по типу todo-лист",
+        "priority": 1,
+        "tags": [
+          "Колледж",
+          "Боль и страх"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Стрельба из лука",
+        "description": "",
+        "priority": 4,
+        "tags": [
+          "Хобби"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Просто задание",
+        "description": "",
+        "priority": 4,
+        "tags": []
+      }
+    ]
+  }
+]

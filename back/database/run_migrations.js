@@ -1,4 +1,4 @@
-import { runner } from 'node-pg-migrate';
+const { runner } = require('node-pg-migrate');
 
 const direction = process.argv[2];
 
@@ -17,7 +17,7 @@ const databaseUrl = {
 };
 
 try {
-  await runner({
+  async () => await runner({
     databaseUrl,
     dir: 'database/migrations',
     direction,
@@ -33,7 +33,8 @@ try {
       ? 'Миграции успешно применены'
       : 'Последняя миграция успешно отменена'
   );
-} catch (error) {
+}
+catch (error) {
   console.error('Ошибка выполнения миграции:');
   console.error(error.message);
   process.exitCode = 1;
